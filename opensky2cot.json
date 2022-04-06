@@ -1,0 +1,9 @@
+﻿{
+    "opensky": {
+        "interval": "3000"
+    },
+    "cot": {
+        "address": "localhost",
+        "port": 8087
+    }
+}
