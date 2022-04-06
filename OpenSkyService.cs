@@ -58,7 +58,6 @@ namespace opensky2cot
 
                 if (_takClient.IsConnected)
                 {
-                    var big_payload = new StringBuilder();
                     var response = await _openSkyClient.GetStatesAsync();
                     foreach (var state in response.States)
                     {
@@ -109,8 +108,6 @@ namespace opensky2cot
                             Log.Information("Failed to parse state vector", e);
                         }
                     }
-
-                    _takClient.Send(big_payload.ToString());
                 }
                 else
                 {
