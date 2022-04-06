@@ -23,4 +23,4 @@ jobs:
       run: dotnet restore
 
     - name: Build
-      run: dotnet build opensky2cot.sln -r linux-x64
+      run: dotnet build opensky2cot.csproj -r linux-x64
